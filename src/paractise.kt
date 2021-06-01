@@ -53,10 +53,10 @@ data class Student(var name:String,var Id:String,var age:Int,var nationality:Str
         Student("Brawlian","45362729765",23,"Rwandan","Anita B")
     )
     var sortedStudent=student.sortedBy { student ->student.age}
-    var descendingSortedStudent=studentbydesorted
+    var descendingSortedStudent=student.sortedByDescending { student -> student.age  }
 }
 
 
-var descendingSortedCars = cars.sortedByDescending { car -> car.model }
+
 
 
